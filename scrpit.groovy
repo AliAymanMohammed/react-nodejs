@@ -1,6 +1,8 @@
 def buildJar() {
     echo "building the application..."
-    sh 'cd my-app && npm install && npm run build'
+    sh 'cd my-app'
+    sh 'npm install'
+    sh 'npm run build'
 }
 
 def buildImage() {
