@@ -4,6 +4,7 @@ pipeline {
     agent any
     tools{
         nodejs 'my-nodejs'
+        mpn 'npm'
     }
     stages {
         stage("init") {
