@@ -3,7 +3,8 @@ def gv
 pipeline {
     agent any
     tools{
-        nodejs 'my-nodejs'
+        nodejs 'my-nodejs' ,
+        npm 'npm'
     }
     stages {
         stage("init") {
